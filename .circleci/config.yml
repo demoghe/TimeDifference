@@ -17,7 +17,6 @@ jobs: # a collection of steps
           command: echo | ls -la
           command: cd timedifference
           command: pwd
-          command: node_modules/.bin/jasmine init
       - run: # run tests
           name: test
           command: npm test
