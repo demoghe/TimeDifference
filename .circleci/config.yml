@@ -8,6 +8,9 @@ jobs: # a collection of steps
       - run:
           name: update-npm
           command: 'sudo npm install -g npm@latest'
+      - run:
+          name: install-npm-wee
+          command: npm install
       - run: # run tests
           name: test
           command: npm test
