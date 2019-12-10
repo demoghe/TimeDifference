@@ -14,6 +14,10 @@ jobs: # a collection of steps
       - run:
           name: jasmine
           command: npm install jasmine
+          command: echo | ls -la
+          command: cd timedifference
+          command: pwd
+          command: node_modules/.bin/jasmine init
       - run: # run tests
           name: test
           command: npm test
