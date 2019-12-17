@@ -9,9 +9,11 @@ jobs: # a collection of steps
           command: sudo npm install -g npm@latest
 #      - run:
 #          command: sudo npm install jasmine -g
-#      - run:
-#          command: sudo npm install -g grunt-cli
+       - run:
+           command: sudo npm install -g grunt-cli
 #      - run:
 #          command: chmod 777 Gruntfile.js
+      - run:
+          command: ls -la
       - run:
           command: npm test
