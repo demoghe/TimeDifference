@@ -8,6 +8,8 @@ jobs: # a collection of steps
       - run:
           command: sudo npm install -g npm@latest
       - run:
+          command: sudo npm update -g npm
+      - run:
           command: sudo npm install -g grunt-cli
       - run:
           command: ls -la
