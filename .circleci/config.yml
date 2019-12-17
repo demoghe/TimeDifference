@@ -12,16 +12,4 @@ jobs: # a collection of steps
       - run:
           command: sudo npm install -g grunt-cli
       - run:
-          command: cd ./test
-      - run:
-          command: pwd
-      - run:
-          command: jasmine init
-      - run:
-          command: ls -la
-      - run:
-          command: cd specs
-      - run:
-          command: jasmine init
-      - run:
-          command: jasmine url_spec.js
+          command: npm test
