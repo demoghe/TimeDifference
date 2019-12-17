@@ -16,4 +16,5 @@ jobs: # a collection of steps
       - run:
           command: jasmine init
       - run: 
-          command: jasmine
+          command: jasmine specs
+          command: jasmine specs/url_spec.js
