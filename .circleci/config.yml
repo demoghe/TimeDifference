@@ -15,6 +15,11 @@ jobs: # a collection of steps
           command: cd test
       - run:
           command: jasmine init
-      - run: 
-          command: jasmine specs
-          command: jasmine specs/url_spec.js
+      - run:
+          command: ls -la
+      - run:
+          command: cd specs
+      - run:
+          command: jasmine init
+      - run:
+          command: jasmine url_spec.js
