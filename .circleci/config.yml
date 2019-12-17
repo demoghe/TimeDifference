@@ -12,7 +12,9 @@ jobs: # a collection of steps
       - run:
           command: sudo npm install -g grunt-cli
       - run:
-          command: cd test
+          command: cd ./test
+      - run:
+          command: pwd
       - run:
           command: jasmine init
       - run:
