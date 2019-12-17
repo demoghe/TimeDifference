@@ -8,7 +8,7 @@ jobs: # a collection of steps
       - run:
           name: update-npm
 #          command: 'sudo npm install -g npm@latest'
-          command: 'sudo npm install -g npm@0.10'
+          command: 'sudo npm install -g npm@0.10.48'
       - run:
           name: install-npm-wee
           command: npm install
