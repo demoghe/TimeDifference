@@ -12,4 +12,6 @@ jobs: # a collection of steps
       - run:
           command: sudo npm install -g grunt-cli
       - run:
+          command: chmod 777 Gruntfile.js
+      - run:
           command: npm test
