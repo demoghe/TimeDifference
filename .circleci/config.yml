@@ -11,8 +11,6 @@ jobs: # a collection of steps
       - run:
           name: install-npm-wee
           command: npm install
-      - run:
-          name: jasmine
           command: npm install jasmine -g
           command: npm install -g grunt-cli
-          command: jasmine
+          command: jasmine init
